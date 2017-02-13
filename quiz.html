@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aprenda História - Videos</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/portal.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/angular.min.js"></script>
+
+  </head>
+  <body>
+		<div ng-include src="'menu.html'"></div>
+
+    <main>
+      <section>
+        <div class="container">
+          <div class="col-sm-12 pagina-jogo">
+            <i class="fa fa-gamepad fa-4x"></i><h1> Quiz sobre Ponta Porã</h1>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="panel panel-primary">
+                <div class="panel-heading"><h3>Questão 1</h3></div>
+                <div class="panel-body">
+                  Em qual estado está localizado ponta porã?
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1"><br>Resposta</label>
+                    <select class="form-control input-lg">
+                      <option>Selecione a resposta</option>
+                      <option>Mato Grosso do Sul</option>
+                      <option>Bahia</option>
+                      <option>São Paulo</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12">
+              <div class="panel panel-primary">
+                <div class="panel-heading"><h3>Questão 2</h3></div>
+                <div class="panel-body">
+                  Qual o tamanho populacional de Ponta Porã?
+                  <div class="form-group">
+                    <label for="exampleInputEmail1"><br>Resposta</label>
+                    <select class="form-control input-lg">
+                      <option>Selecione a resposta</option>
+                      <option>77 872</option>
+                      <option>88 882</option>
+                      <option>99 992</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class=" container form-group">
+              <button type="button" class="btn btn-primary btn-lg btn-block">Ver resultado</button>
+            </div>
+
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div ng-include src="'parceiros.html'"></div>
+    <div ng-include src="'rodape.html'"></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

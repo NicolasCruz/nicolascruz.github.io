@@ -1,0 +1,1076 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+.overlay {
+   background:transparent;
+   position:relative;
+   width:1108px;
+   height:623px; /* your iframe height */
+   top:623px;  /* your iframe height */
+   margin-top:-623px;  /* your iframe height */
+   z-index: 9999;
+}
+
+body {
+  padding-top: 70px;
+  /*font-family: 'Roboto Mono', monospace;*/
+}
+
+header {
+  position: relative;
+  z-index: 999;
+}
+
+header li {
+  list-style: none outside none;
+}
+
+ul > li > a #acessibility {
+  list-style: none outside none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.topo {
+  background-color: #303F9F;
+}
+
+.accessibility-left {
+  text-align: left;
+  margin-left: -20px;
+}
+
+.accessibility-left a {
+  padding: 3px 5px 3px 5px;
+}
+
+.accessibility-right {
+  text-align: right;
+  margin-left: 15px;
+}
+
+.accessibility-right a {
+  padding: 3px 5px 3px 5px;
+}
+
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+  max-height: 540px;
+}
+
+.navbar {
+  border-radius: 0;
+  height: 78px;
+}
+
+.navbar-brand img {
+  margin-top: -11px;
+  height: 100px;
+  width: 70px;
+  z-index: 999;
+}
+
+.logo {
+  z-index: 99999;
+  position: relative;
+}
+
+.nav > li > a, .nav > li > a:hover {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: transparent;
+  background-position: center 5px;
+  background-repeat: no-repeat;
+  padding: 55px 50px 1px;
+}
+
+
+.texto-atividade {
+  margin-top: -55px;
+}
+
+.menu {
+  margin-top: -53px;
+}
+
+.menu-home {
+  margin-bottom: -30px !important;
+  margin-left: 45px;
+  color: white;
+}
+
+.fa-play-circle {
+  color: white;
+}
+
+.menu-videos {
+  margin-bottom: -30px !important;
+  margin-left: 50px;
+}
+
+.fa-gamepad {
+  color: white;
+}
+
+.menu-museu {
+  margin-bottom: -30px !important;
+  margin-left: 44px;
+  color: white;
+}
+
+.fa-pencil {
+  margin-left: 50px;
+  color: white;
+}
+
+.fa-info {
+  margin-bottom: -30px !important;
+  margin-left: 63px;
+  color: white;
+}
+
+.fa-envelope {
+  margin-bottom: -30px !important;
+  margin-left: 55px;
+  color: white;
+}
+
+.destaques {
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+}
+
+.jogos {
+  background: #C5CAE9;
+}
+
+.videos {
+  background: #0097A7;
+}
+
+section {
+  padding: 50px 0;
+}
+
+section.destaques {
+  padding: 200px 0 73px 0;
+  position: relative;
+  z-index: 0 !important;
+}
+
+section h1 {
+  font-family: 'riffic_freebold';
+  font-size: 33px;
+  color: #000;
+  margin: 0 0 30px 0;
+}
+
+section h1 span {
+  background: #FFC107;
+  padding: 15px 30px 15px 30px;
+  display: inline-block;
+  height: 77px;
+}
+
+section h1 span  {
+  margin: -20px 20px 0 0;
+}
+
+section h2 {
+  font-family: 'riffic_freebold';
+  font-size: 33px;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0 0 30px 0;
+}
+
+section h2 span {
+  background: #FFC107;
+  padding: 15px 30px 15px 30px;
+  display: inline-block;
+  height: 77px;
+}
+
+section h2 span  {
+  margin: -20px 20px 0 0;
+}
+
+.h3-destaques {
+  margin-top: 5px;
+}
+
+.jogo-icon {
+  margin-left: -5px;
+  margin-top: -15px;
+}
+
+.h3-jogo {
+  padding-left: 80px;
+  margin-top: -45px;
+}
+
+.video-icon {
+  margin-left: -5px;
+  margin-top: -15px;
+  padding-top: 5px;
+}
+
+.h3-video {
+  padding-left: 75px;
+  margin-top: -50px;
+}
+
+.atividade-icon {
+  margin-left: -5px;
+  margin-top: -15px;
+  padding-top: 5px;
+}
+
+.h3-atividade {
+  padding-left: 75px;
+  margin-top: -50px;
+}
+
+.destaque a, .jogo a,.video a, .atividade a {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+
+.destaque a > img, .jogo a > img, .video a > img, .atividade a > img {
+  width: 100%;
+}
+
+.destaque span img {
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.destaque span b {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80%;
+  line-height: normal;
+}
+
+.destaque span, .jogo span, .video span, .atividade span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 20px;
+  color: #FFF;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 0px #000;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  background: rgba(33, 25, 21, 0.55);
+}
+
+.video-destaque {
+  margin-top: -15px;
+  margin-left: 10px;
+}
+
+.atividade-destaque {
+  margin-top: -20px;
+}
+
+.jogo-destaque {
+  margin-top: -12px;
+}
+
+.jogo span b, .video span b, .atividade span b {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80%;
+  line-height: normal;
+}
+
+.jogo-2 .icone-jogo2, .jogo-3 .icone-jogo2, .pagina-jogo .icone-jogo2 {
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 0px;
+}
+
+.icone-jogo2-maior {
+  margin-left: 0px;
+}
+
+.titulo-jogo2-maior {
+  margin-top: -13px;
+}
+
+.titulo-jogo {
+  margin-top: -12px;
+}
+
+.titulo-video-maior {
+  margin-top: -15px;
+}
+
+.titulo-video {
+  margin-top: -15px;
+}
+
+.titulo-atividade {
+  margin-top: -15px;
+}
+
+.icone-video2 {
+  margin-left: 0px;
+}
+
+.icone-atividade2 {
+  margin-left: 0px;
+}
+
+.atividade {
+  margin-bottom: 17px;
+}
+
+.ads {
+  display: table;
+  margin: 0 auto;
+  text-align: right;
+  text-transform: uppercase;
+  padding-bottom: 50px;
+}
+
+.wrap-footer {
+  background: #3F51B5;
+  color: #FFF;
+  padding: 15px 0;
+}
+
+.wrap-footer a {
+  color: #FFF;
+}
+
+.menu-footer {
+  border-top: 1px solid #FFF;
+  margin: 25px 0 0 0;
+  padding: 25px 0 0 0;
+}
+
+.menu-footer li {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  padding: 0 10px;
+  border-right: 1px solid #FFF;
+}
+
+.menu-footer li:first-child {
+  padding-left: 0;
+}
+
+.menu-footer li:last-child {
+  border: 0;
+  padding-right: 0;
+}
+
+.copyright p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  margin-top: 45px;
+  text-align: center;
+  color: #FFF;
+}
+
+.desenvolvimento-logo a {
+  text-decoration: none;
+}
+
+.desenvolvimento-logo span {
+  font-size: 13px;
+  font-weight: lighter;
+  text-align: right;
+  letter-spacing: .7px;
+}
+
+.desenvolvimento-logo img {
+  max-width: 100px;
+}
+
+.conteudo-videos {
+  background-color: #0097A7;
+}
+
+.conteudo-jogos {
+  background-color: #C5CAE9;
+}
+
+.conteudo-atividades {
+  background-color: #00BCD4;
+}
+
+.pagina-atividades h1{
+  text-align: center;
+  padding-top: 50px;
+  margin-left: 30px;
+}
+
+.pagina-atividades h2 {
+  margin-top: -45px;
+  margin-left: 60px;
+}
+
+.pagina-atividade-icon {
+  margin-left: -200px;
+  margin-top: -10px;
+}
+
+.pagina-jogos h1{
+  text-align: center;
+  padding-top: 50px;
+  margin-left: 30px;
+}
+
+.pagina-jogos h2 {
+  margin-top: -45px;
+  margin-left: 60px;
+}
+
+.pagina-jogos-icon {
+  margin-left: -125px;
+  margin-top: -13px;
+}
+
+.pagina-jogo {
+  background: #FFC107;
+  padding: 10px 10px 0 20px;
+  margin: 50px auto 30px auto;
+}
+
+.pagina-jogo h1 {
+  margin-left: 70px;
+  margin-top: -40px;
+  margin-bottom: 15px;
+  font-size: 33px;
+}
+
+.pagina-jogo h3 {
+  font-size: 30px;
+}
+
+.pagina-jogo i {
+  padding-right: 150px;
+  margin-top: -10px;
+  margin-bottom: -5px;
+}
+
+/* Para página de exibição do video */
+
+.pagina-video {
+  background: #FFC107;
+  padding: 10px 10px 0 20px;
+  margin: 20px auto 20px auto;
+}
+
+.pagina-video h1 {
+  margin-left: 70px;
+  margin-top: -40px;
+  padding-bottom: 15px;
+  font-size: 33px;
+}
+
+.pagina-video i {
+  padding-right: 150px;
+  margin-top: 5px;
+}
+
+/* Fim */
+
+.pagina-videos h1 {
+  text-align: center;
+  padding-top: 30px;
+  margin-left: 30px;
+}
+
+.pagina-videos h2 {
+  margin-top: -47px;
+  margin-left: 70px;
+}
+
+.pagina-videos-icon {
+  margin-left: -155px;
+  margin-top: -10px;
+}
+
+.pagina-contato h1 {
+  text-align: center;
+  padding-top: 50px;
+  margin-left: 30px;
+}
+
+.pagina-contato h2 {
+  margin-top: -47px;
+  margin-left: 70px;
+}
+
+.pagina-contato i {
+  margin-left: -175px;
+  margin-top: -10px;
+}
+
+.pagina-sobre-equipe {
+  background: #3B4050;
+  color:white;
+  padding: 50px 0 50px 0;
+  margin-top: -25px;
+}
+
+.pagina-sobre-perfil {
+  padding-bottom: 50px;
+}
+
+.pagina-sobre-projeto {
+  background: #F3EDE7;
+  margin-top:-20px;
+  padding:50px 0 50px 0;
+}
+
+.pagina-sobre h1 {
+  font-size: 40px;
+  padding-bottom: 50px;
+  color: white;
+}
+
+.pagina-sobre h2 {
+   font-size:40px;
+}
+/*
+.paginas-secundarias h1 {
+  text-align: center;
+  padding-top: 50px;
+  margin-left: 30px;
+}
+
+.paginas-secundarias h2 {
+  margin-top: -47px;
+  margin-left: 70px;
+}*/
+
+.breadcrumb {
+  margin-top: 30px;
+}
+.breadcrumb a {
+  color: blue;
+}
+
+/*! Efeito hover para o menu
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.1.0
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+
+ * Made available under a MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+
+ * Hover.css Copyright Ian Lunn 2014. Generated with Sass.
+ */
+
+.hvr-fade {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+  background-color: #303F9F;
+  color: white;
+}
+
+.hvr-fade-topo {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+
+.hvr-fade-topo:hover, .hvr-fade-topo:focus, .hvr-fade-topo:active {
+  background-color: #FFC107;
+  color: black;
+}
+
+@-webkit-keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+@keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+.hvr-buzz-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-buzz-out:hover, .hvr-buzz-out:focus, .hvr-buzz-out:active {
+  -webkit-animation-name: hvr-buzz-out;
+  animation-name: hvr-buzz-out;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}/* Fim do efeito */
+
+/* Smartphones (XS no bootstrap: col-xs-*) */
+@media (max-width: 767px) {
+  .accessibility-right {
+    text-align: center;
+  }
+
+  .accessibility-right a {
+    display: inline-block;
+  }
+
+  .nav > li > a, .nav > li > a:hover {
+    background-position: 20px center;
+    padding: 20px 70px;
+    background-size: 35px auto;
+  }
+
+  .nav > li {
+    margin: 10px 0;
+  }
+
+  .navbar-collapse {
+    background: #303F9F;
+  }
+
+  .navbar-nav {
+    padding: 32px 0 0 0;
+  }
+
+  .menu {
+    margin-left: 50px;
+  }
+
+  .texto-atividade {
+    margin-left: 50px;
+  }
+
+  .menu-museu {
+    margin-left: 40px;
+  }
+
+  .fa-info {
+    margin-left: 63px;
+  }
+
+  .fa-envelope {
+    margin-left: 45px;
+  }
+
+  .atividade-icon {
+    margin-left: -10px !important;
+    margin-top: -15px;
+    padding-top: 5px;
+  }
+
+  .h2-atividade {
+    padding-left: 60px;
+    margin-top: -50px;
+  }
+
+  .jogo-icon {
+    margin-left: -10px !important;
+    margin-top: -15px;
+  }
+
+  .h2-jogo {
+    padding-left: 80px;
+    margin-top: -45px;
+  }
+
+  .destaque, .jogo, .video, .atividade {
+    margin-bottom: 10px;
+  }
+
+  .desenvolvimento-logo {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .titulo-jogo {
+    margin-right: -10px;
+  }
+
+  .titulo-jogo2-maior {
+    margin-right: -10px;
+  }
+
+  .video-destaque {
+    margin-right: -10px;
+  }
+
+  .pag-jogo h3 {
+    margin-top: -40px;
+    font-size: 28px;
+  }
+
+  .pagina-contato h1 {
+    text-align: center;
+    padding-top: 90px;
+    margin-left: -5px;
+  }
+
+  .pagina-contato h2 {
+    margin-top: -47px;
+    margin-left: 55px;
+  }
+
+  .pagina-videos h1 {
+    text-align: center;
+    padding-top: 30px;
+    margin-left: -5px;
+  }
+
+  .pagina-atividades h1{
+    text-align: center;
+    padding-top: 90px;
+    margin-left: 0px;
+  }
+
+  .pagina-atividades h2 {
+    margin-top: -45px;
+    margin-left: 66px;
+  }
+
+  .breadcrumb {
+    margin-top: 60px;
+  }
+}
+
+/* Tablets no modo paisagem (SM no bootstrap: col-sm-*) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .accessibility-right {
+    text-align: center;
+  }
+
+  .nav > li > a, .nav > li > a:hover {
+    padding: 55px 30px 1px;
+  }
+
+  .navbar-brand {
+    width: 160px;
+  }
+
+  .navbar-brand img {
+    max-width: 100%;
+  }
+
+  .menu-videos{
+    margin-left: 30px;
+  }
+
+  .menu-museu{
+    margin-left: 24px;
+  }
+
+  .menu-atividades{
+    margin-left: 50px;
+  }
+
+  .fa-info{
+    margin-left: 43px;
+  }
+
+  .fa-envelope{
+    margin-left: 35px;
+  }
+
+  .pra-cima{
+    margin-top: -50px;
+  }
+
+  .titulo-video {
+    margin-right: -5px;
+  }
+
+  .destaque, .jogo, .video, .atividade {
+    margin-bottom: 10px;
+  }
+
+  .jogo-2, .jogo-3 {
+    height: 229px;
+  }
+
+  .atividade-1{
+    height: 146px;
+  }
+
+  .paginas-secundarias img{
+    height: 146px;
+  }
+
+  .pagina-jogos img{
+    height: 146px;
+  }
+
+  .pagina-videos img{
+    height: 146px;
+  }
+
+  .pagina-atividades img{
+    height: 146px;
+  }
+
+  .titulo-atividade {
+    margin-right: -5px;
+  }
+
+  .titulo-video-maior {
+    margin-right: -5px;
+  }
+}
+
+/* Tablets no modo retrato e monitores medianos (MD no bootstrap: col-md-*)*/
+@media (min-width:992px) and (max-width: 1199px) {
+  .accessibility-right {
+    text-align: center;
+  }
+
+  .nav > li > a, .nav > li > a:hover {
+    padding: 55px 40px 1px;
+  }
+
+  .menu-home {
+    margin-left: 35px;
+  }
+
+  .menu-videos {
+    margin-left: 40px;
+  }
+
+  .menu-museu {
+    margin-left: 34px;
+  }
+
+  .menu-atividades {
+    margin-left: 60px;
+  }
+
+  .fa-info {
+    margin-left: 53px;
+  }
+
+  .fa-envelope {
+    margin-left: 45px;
+  }
+
+  .destaque-1, .jogo-1 {
+    height: 361px;
+  }
+
+  .atividade-1{
+    height: 194px;
+  }
+
+  .paginas-secundarias img{
+    height: 194px;
+  }
+
+  .pagina-jogos img{
+    height: 194px;
+  }
+
+  .pagina-videos img{
+    height: 194px;
+  }
+
+  .pagina-atividades img{
+    height: 194px;
+  }
+
+  .destaque-2, .destaque-3, .jogo-2, .jogo-3 {
+    height: 173px;
+  }
+
+  .destaque-2, .jogo-2 {
+    margin-bottom: 15px;
+  }
+
+  .video-1 {
+    height: 269px;
+  }
+
+  .video-2, .video-3, .video-4, .video-5 {
+    height: 128px;
+  }
+
+  .video-2, .video-3 {
+    margin-bottom: 13px;
+  }
+
+  .titulo-jogo {
+    margin-right: -5px;
+  }
+
+  .titulo-video {
+    margin-right: -10px;
+  }
+}
+
+/* Monitores grandes, widescreen (LG no bootstrap: col-lg-*)*/
+@media (min-width: 1200px) {
+  .menu-atividades{
+    margin-left: 70px;
+  }
+
+  .destaque-1, .jogo-1 {
+    height: 380px;
+    overflow: hidden;
+  }
+
+    .atividade-1{
+      height: 239px;
+    }
+
+    .paginas-secundarias img{
+      height: 239px;
+    }
+
+    .pagina-jogos img{
+      height: 239px;
+    }
+
+    .pagina-videos img{
+      height: 239px;
+    }
+
+    .pagina-atividades img{
+      height: 239px;
+    }
+
+    .destaque-2, .destaque-3, .jogo-2, .jogo-3 {
+      height: 180px;
+      overflow: hidden;
+    }
+
+    .destaque-2, .jogo-2 {
+      margin-bottom: 20px;
+    }
+
+    .video-1 {
+      height: 283px;
+      overflow: hidden;
+    }
+
+    .video-2, .video-3, .video-4, .video-5 {
+      height: 135px;
+      overflow: hidden;
+    }
+
+    .video-2, .video-3 {
+      margin-bottom: 13px;
+    }
+}

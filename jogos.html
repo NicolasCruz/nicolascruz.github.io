@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aprenda História - Videos</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/portal.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/angular.min.js"></script>
+
+  </head>
+  <body>
+		<div ng-include src="'menu.html'"></div>
+
+    <main class="pagina-jogos">
+      <section class="conteudo-jogos">
+        <div class="container">
+          <h1><span><i class="fa fa-gamepad fa-2x pagina-jogos-icon"></i><h2>Jogos</h2></span></h1>
+          <div class="row">
+            <div class="atividade col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <a href="quiz.html">
+                <span><i class="fa fa-gamepad fa-2x icone-jogo2"></i> <b class="titulo-jogo">Quiz sobre Ponta Porã</b></span>
+                <img src="content/quiz.png" alt="">
+              </a>
+            </div>
+            <div class="atividade col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <a href="#">
+                <span><i class="fa fa-gamepad fa-2x icone-jogo2"></i> <b class="titulo-jogo">Lorem Ipsum</b></span>
+                <img src="content/dog.jpg" alt="">
+              </a>
+            </div>
+            <div class="atividade col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <a href="#">
+                <span><i class="fa fa-gamepad fa-2x icone-jogo2"></i> <b class="titulo-jogo">Lorem Ipsum</b></span>
+                <img src="content/toronto-984543_640.jpg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div ng-include src="'parceiros.html'" style="padding-top:50px;"></div>
+    <div ng-include src="'rodape.html'"></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
