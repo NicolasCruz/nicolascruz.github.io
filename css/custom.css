@@ -1,0 +1,50 @@
+.contrast{
+  background-color: #000!important;
+}
+body.contrast .topo{
+  background-color: #000!important;
+}
+
+body.contrast .jogos, body.contrast .videos, body.contrast .atividades, body.contrast .wrap-footer{
+  background-color: #000!important;
+  border-top: 1px solid #fff;
+}
+
+body.contrast .navbar-default {
+    background-color: #000;
+    border-color: #000!important;
+    border-top-color: #fff!important;
+}
+
+body.contrast .destaques:after{
+  position: absolute;
+  top: 0;
+  content: '';
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+body.contrast section h1 span{
+  background-color: #000;
+  border: 1px solid;
+  border-color: #fff!important;
+}
+
+body.contrast section h2{
+  color: #FFF!important;
+}
+
+body.contrast a{
+  text-decoration: underline!important;
+  color: #FFF333!important;
+}
+
+body.contrast .hvr-fade-topo:hover, .hvr-fade-topo:focus, .hvr-fade-topo:active{
+  background-color: transparent!important;
+  color: #FFF333!important;
+}
+body.contrast .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active{
+  background-color: transparent!important;
+}
