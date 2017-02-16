@@ -1,3 +1,9 @@
+/*/ ALL /*/
+a{
+  cursor: pointer;
+}
+
+/*/ CONTRAST /*/
 .contrast{
   background-color: #000!important;
 }
