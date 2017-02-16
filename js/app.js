@@ -1,1 +1,1 @@
-var app = angular.module("cuia", ['ngStorage']);
+var app = angular.module("cuia", ['ngStorage','ui.router']);
