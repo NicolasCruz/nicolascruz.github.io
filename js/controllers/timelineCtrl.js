@@ -1,6 +1,4 @@
-(function() {
-
-  'use strict';
+app.controller("timelineCtrl", function ($scope) {
 
   // define variables
   var items = document.querySelectorAll(".timeline li");
@@ -29,5 +27,4 @@
   window.addEventListener("load", callbackFunc);
   window.addEventListener("resize", callbackFunc);
   window.addEventListener("scroll", callbackFunc);
-
-})();
+});

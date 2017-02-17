@@ -18,11 +18,11 @@
               </div>
             </div>
           <br>
-          <div class="col-sm-12"><br>
+          <div class="col-sm-12" ng-controller="fontCtrl"><br>
             <span id="controle_zoom" style="font-size:20px;">
-              <a href="javascript:void(0);" id="a_reset" style="color:black;">A</a> | <a href="javascript:void(0);" id="a_mais" style="color:black;">A+</a> | <a href="javascript:void(0);" id="a_menos" style="color:black;">A-</a>
+              <a ng-click="modifyFont('a_reset')" style="color:black;">A</a> | <a ng-click="modifyFont('a_mais')" style="color:black;">A+</a> | <a ng-click="modifyFont('a_menos')" style="color:black;">A-</a>
             </span>
-            <div  id="content">
+            <div id="content">
               <h3>Transcrição</h3>
               <p class="text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget ante dui. Maecenas finibus turpis id mattis luctus. Proin ipsum lorem, congue id turpis non, euismod dignissim magna. Donec pellentesque ipsum at lorem semper luctus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus elementum sem leo. Donec quis convallis lectus. Cras leo quam, molestie eu elit a, varius pretium leo. Vivamus auctor auctor elit, tincidunt elementum neque varius eget. Integer ipsum risus, iaculis eget nisl id, dictum fermentum mi.
