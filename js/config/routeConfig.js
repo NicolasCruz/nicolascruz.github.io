@@ -43,7 +43,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 
   var atividadeGuerraState = {
     name: 'atividadeGuerra',
-    url: '/atividadeGuerra',
+    url: '/atividades/atividadeGuerra',
     templateUrl: 'views/atividades/atividadeGuerra.html',
     data: {
       title: 'Acesso Educação | Atividade Guerra do Paraguai'
