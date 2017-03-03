@@ -34,7 +34,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
   }
   var atividadesAvisoState = {
     name: 'atividadesAviso',
-    url: '/atividadesAviso',
+    url: '/atividades/atividadesAviso',
     templateUrl: 'views/atividadesAviso.html',
     data: {
       title: 'Acesso Educação | Atividades'
