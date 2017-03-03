@@ -5,7 +5,7 @@ app.directive('title', function ($rootScope, $timeout) {
         $timeout(function () {
           $rootScope.title = (toState.data && toState.data.title)
             ? toState.data.title
-            : 'Aprenda História';
+            : 'Acesso Educação';
         });
       };
       $rootScope.$on('$stateChangeSuccess', listener);

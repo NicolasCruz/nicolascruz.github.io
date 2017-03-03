@@ -15,7 +15,7 @@
 }
 
 body {
-  padding-top: 70px;
+  padding-top: 0;
   /*font-family: 'Roboto Mono', monospace;*/
 }
 
@@ -64,19 +64,23 @@ a:hover {
   padding: 3px 5px 3px 5px;
 }
 
-.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+.navbar .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
   max-height: 540px;
 }
 
 .navbar {
-  border-radius: 0;
   height: 78px;
+  border: 0;
+}
+
+.navbar-right {
+    margin-right: -25px;
 }
 
 .navbar-brand img {
-  margin-top: -11px;
+  margin-top: -21px;
   height: 100px;
-  width: 70px;
+  width: 190px;
   z-index: 999;
 }
 
@@ -119,7 +123,7 @@ a:hover {
   margin-left: 50px;
 }
 
-.fa-gamepad {
+.fa-university {
   color: white;
 }
 
@@ -214,6 +218,11 @@ section h2 span  {
 .jogo-icon {
   margin-left: -5px;
   margin-top: -15px;
+}
+
+.museu-icon {
+  margin-left: -5px;
+  margin-top: -10px;
 }
 
 .h3-jogo {
@@ -339,6 +348,29 @@ section h2 span  {
   margin-left: 0px;
 }
 
+.btn-resposta {
+  border-color: #E05D07;
+  color: #000;
+}
+
+.btn-resposta:hover {
+  border-color: #E05D07;
+  background-color: #E05D07;
+  color: white;
+}
+
+.btn-resposta:focus{
+  border-color: #E05D07;
+  background-color: #FFF;
+  color: #000;
+}
+
+.btn-resposta.active{
+  background-color: #C95D07;
+  border-color: #C95D07;
+  color: #FFF;
+}
+
 .atividade {
   margin-bottom: 17px;
 }
@@ -349,6 +381,12 @@ section h2 span  {
   text-align: right;
   text-transform: uppercase;
   padding-bottom: 50px;
+  padding-top: 30px;
+}
+
+.alert {
+    padding: 25px;
+    padding-bottom: 0;
 }
 
 .wrap-footer {
@@ -455,7 +493,7 @@ section h2 span  {
 .pagina-jogo {
   background: #FFC107;
   padding: 10px 10px 0 20px;
-  margin: 50px auto 30px auto;
+  margin: 10px auto 30px auto;
 }
 
 .pagina-jogo h1 {
@@ -473,6 +511,25 @@ section h2 span  {
   padding-right: 150px;
   margin-top: -10px;
   margin-bottom: -5px;
+  color: #FFF;
+}
+
+.pagina-atividadeAviso {
+  background: #FFC107;
+  padding: 10px 10px 0 20px;
+  margin: 20px auto 20px auto;
+}
+
+.pagina-atividadeAviso h1 {
+  margin-left: 100px;
+  margin-top: -40px;
+  padding-bottom: 15px;
+  font-size: 33px;
+}
+
+.pagina-atividadeAviso i {
+  padding-left: 0;
+  margin-top: 5px;
 }
 
 /* Para página de exibição do video */
@@ -567,9 +624,6 @@ section h2 span  {
   margin-left: 70px;
 }*/
 
-.breadcrumb {
-  margin-top: 30px;
-}
 .breadcrumb a {
   color: blue;
 }
@@ -787,6 +841,11 @@ section h2 span  {
     margin-top: -15px;
   }
 
+  .museu-icon {
+    margin-left: -10px !important;
+    margin-top: -10px;
+  }
+
   .h2-jogo {
     padding-left: 80px;
     margin-top: -45px;
@@ -844,10 +903,6 @@ section h2 span  {
   .pagina-atividades h2 {
     margin-top: -45px;
     margin-left: 66px;
-  }
-
-  .breadcrumb {
-    margin-top: 60px;
   }
 }
 

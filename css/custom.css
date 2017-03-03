@@ -18,8 +18,13 @@ body.contrast .jogos, body.contrast .videos, body.contrast .atividades, body.con
 
 body.contrast .navbar-default {
     background-color: #000;
-    border-color: #000!important;
-    border-top-color: #fff!important;
+    border: 2px!important;
+}
+
+body.contrast .navbar {
+  border-color: #FFF!important;
+  border: 2px !important;
+
 }
 
 body.contrast .destaques:after{
@@ -43,6 +48,11 @@ body.contrast section h2{
 }
 
 body.contrast a{
+  text-decoration: none!important;
+  color: #FFF333!important;
+}
+
+body.contrast a:hover{
   text-decoration: underline!important;
   color: #FFF333!important;
 }
