@@ -1,7 +1,9 @@
 // configurando rotas
-app.config(function ($stateProvider, $urlRouterProvider) {
+app.config(function ($stateProvider, $urlRouterProvider,$locationProvider) {
 
   $urlRouterProvider.otherwise('/');
+  $locationProvider.hashPrefix('');
+  $locationProvider.html5Mode(true);
 
   var inicioState = {
     name: 'inicio',

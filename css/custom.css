@@ -3,6 +3,36 @@ a{
   cursor: pointer;
 }
 
+.fa{
+  color: #fff;
+}
+
+.non-shadow {
+  box-shadow: none!important;
+}
+
+.hvr-buzz-out{
+  text-align: center;
+}
+
+@media (min-width: 1200px){
+  #nav-links{
+    float: right;
+  }
+}
+
+@media (max-width: 767px){
+  .hvr-buzz-out{
+    text-align: left;
+  }
+  .menu-icon{
+    margin-left: 8px;
+  }
+  .menu-icon.fa-info{
+    margin-left: 26px;
+  }
+}
+
 /*/ CONTRAST /*/
 .contrast{
   background-color: #000!important;
@@ -18,13 +48,18 @@ body.contrast .jogos, body.contrast .videos, body.contrast .atividades, body.con
 
 body.contrast .navbar-default {
     background-color: #000;
-    border: 2px!important;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
 
-body.contrast .navbar {
-  border-color: #FFF!important;
-  border: 2px !important;
+.navbar-default {
+border-top: 1px solid transparent;
+border-bottom: 1px solid transparent;
+}
 
+section.destaques {
+    position: relative;
+    z-index: 0 !important;
 }
 
 body.contrast .destaques:after{
