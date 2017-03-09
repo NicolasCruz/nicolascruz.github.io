@@ -478,12 +478,13 @@ section h2 span  {
 }
 
 .pagina-atividadeAviso {
-  background: #FFC107;
+  background: #ee640f;
   padding: 10px 10px 0 20px;
   margin: 20px auto 20px auto;
 }
 
 .pagina-atividadeAviso h1 {
+  color: #fff;
   margin-left: 100px;
   margin-top: -40px;
   padding-bottom: 15px;
