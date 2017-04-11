@@ -1,0 +1,1 @@
+angula.module('cuia', ['ngAria']);

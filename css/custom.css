@@ -34,15 +34,16 @@ a{
 }
 
 /*/ CONTRAST /*/
-.contrast{
-  background-color: #000!important;
-}
-body.contrast .topo{
-  background-color: #000!important;
+.contrast {
+  background-color: #000 !important;
 }
 
-body.contrast .jogos, body.contrast .videos, body.contrast .atividades, body.contrast .wrap-footer{
-  background-color: #000!important;
+body.contrast .topo {
+  background-color: #000 !important;
+}
+
+body.contrast .jogos, body.contrast .videos, body.contrast .atividades, body.contrast .wrap-footer {
+  background-color: #000 !important;
   border-top: 1px solid #fff;
 }
 
@@ -62,7 +63,7 @@ section.destaques {
     z-index: 0 !important;
 }
 
-body.contrast .destaques:after{
+body.contrast .destaques:after {
   position: absolute;
   top: 0;
   content: '';
@@ -72,30 +73,114 @@ body.contrast .destaques:after{
   background-color: #000;
 }
 
-body.contrast section h1 span{
+body.contrast section h1 span {
   background-color: #000;
   border: 1px solid;
-  border-color: #fff!important;
+  border-color: #fff !important;
 }
 
-body.contrast section h2{
-  color: #FFF!important;
+body.contrast section h2 {
+  color: #FFF !important;
 }
 
-body.contrast a{
-  text-decoration: none!important;
-  color: #FFF333!important;
+body.contrast a, body.contrast .fa-arrow-circle-right {
+  text-decoration: none !important;
+  color: #FFF333 !important;
 }
 
-body.contrast a:hover{
-  text-decoration: underline!important;
-  color: #FFF333!important;
+body.contrast a:hover {
+  text-decoration: underline !important;
+  color: #FFF333 !important;
 }
 
-body.contrast .hvr-fade-topo:hover, .hvr-fade-topo:focus, .hvr-fade-topo:active{
-  background-color: transparent!important;
-  color: #FFF333!important;
+body.contrast .hvr-fade-topo:hover, .hvr-fade-topo:focus, .hvr-fade-topo:active {
+  background-color: transparent !important;
+  color: #FFF333 !important;
 }
-body.contrast .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active{
-  background-color: transparent!important;
+
+body.contrast .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+  background-color: transparent !important;
+}
+
+body.contrast .breadcrumb {
+  background-color: transparent !important;
+  border: 1px solid #FFF !important;
+}
+
+body.contrast .conteudo-videos, body.contrast .conteudo-museu, body.contrast .conteudo-atividades,
+body.contrast .pagina-sobre-equipe, body.contrast .pagina-sobre-projeto, body.contrast .pagina-acessibilidade,
+body.contrast .panel-default, body.contrast .panel-primary, body.contrast .panel-heading, body.contrast .alert-warning,
+body.contrast .modal-content {
+  background-color: #000 !important;
+  color: #FFF !important;
+}
+
+body.contrast .panel-heading, body.contrast .panel-primary, body.contrast .modal-content {
+  border-color: #FFF;
+}
+
+body.contrast .close {
+  color: #FFF;
+  opacity: 1;
+}
+
+body.contrast .pagina-video {
+  border: 1px solid #FFF !important;
+  background-color: transparent;
+  height: 75px;
+}
+
+body.contrast .pagina-jogo {
+  border: 1px solid #FFF !important;
+  background-color: transparent;
+}
+
+body.contrast .pagina-atividadeAviso {
+  border: 1px solid #FFF;
+  background-color: transparent;
+  height: 75px;
+}
+
+body.contrast .btn-success, body.contrast .btn-danger, body.contrast .btn-primary {
+  background-color: transparent;
+  border: 1px solid #FFF;
+  color: #FFF333;
+}
+
+body.contrast .btn-resposta  {
+  color: #FFF;
+  border-color: #FFF;
+}
+
+body.contrast .btn-resposta:hover, body.contrast .btn-success:hover, body.contrast .btn-danger:hover, body.contrast .btn-primary:hover {
+  background-color: #FFF333;
+  color: #000;
+}
+
+body.contrast .btn-resposta.active, body.contrast .btn-success:active, body.contrast .btn-danger:active, body.contrast .btn-primary:active {
+  background-color: #e8db2e;
+  color: #000;
+}
+
+body.contrast .timeline ul li:nth-child(odd) div::before {
+  border-color: transparent #FFF333 transparent transparent;
+  margin-left: -2px;
+}
+
+body.contrast .timeline ul li div {
+  background-color: #000;
+  border: 2px solid #FFF333;
+}
+
+body.contrast .timeline ul li:nth-child(even) div::before {
+  border-color: transparent transparent transparent #FFF333;
+  margin-right: -2px;
+}
+
+body.contrast .timeline ul li.in-view::after {
+  background-color: #FFF333;
+}
+
+body.contrast .fa-arrow-circle-right:hover {
+  color: #000 !important;
 }

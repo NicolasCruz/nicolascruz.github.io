@@ -90,7 +90,7 @@ a:hover {
 }
 
 .navbar-brand img {
-  margin-top: -21px;
+  margin-top: -16px;
   width: 190px;
   z-index: 999;
 }
@@ -143,7 +143,7 @@ section {
 section h1 {
   font-family: 'riffic_freebold';
   font-size: 33px;
-  color: #000;
+  color: #FFF;
   margin: 0 0 30px 0;
 }
 
@@ -364,7 +364,7 @@ section h2 span  {
 
 .menu-footer {
   border-top: 1px solid #FFF;
-  margin: 25px 0 0 0;
+  margin: 0 0 0 0;
   padding: 25px 0 0 0;
 }
 
@@ -412,7 +412,7 @@ section h2 span  {
   background-color: #0097A7;
 }
 
-.conteudo-jogos {
+.conteudo-museu {
   background-color: #C5CAE9;
   margin-bottom: 50px;
 }
@@ -454,7 +454,7 @@ section h2 span  {
 }
 
 .pagina-jogo {
-  background: #FFC107;
+  background: #ee640f;
   padding: 10px 10px 0 20px;
   margin: 10px auto 30px auto;
 }
@@ -499,7 +499,7 @@ section h2 span  {
 /* Para página de exibição do video */
 
 .pagina-video {
-  background: #FFC107;
+  background: #ee640f;
   padding: 10px 10px 0 20px;
   margin: 20px auto 20px auto;
 }
@@ -536,7 +536,6 @@ section h2 span  {
 
 .pagina-contato h1 {
   text-align: center;
-  padding-top: 50px;
   margin-left: 30px;
 }
 
@@ -548,6 +547,10 @@ section h2 span  {
 .pagina-contato i {
   margin-left: -175px;
   margin-top: -10px;
+}
+
+.pagina-acessibilidade h2{
+  color: #000;
 }
 
 .pagina-sobre-equipe {
@@ -575,6 +578,10 @@ section h2 span  {
 
 .pagina-sobre h2 {
    font-size:40px;
+}
+
+.pagina-sobre{
+  padding: 0;
 }
 /*
 .paginas-secundarias h1 {
@@ -823,7 +830,6 @@ section h2 span  {
 
   .pagina-contato h1 {
     text-align: center;
-    padding-top: 90px;
     margin-left: -5px;
   }
 
@@ -840,13 +846,38 @@ section h2 span  {
 
   .pagina-atividades h1{
     text-align: center;
-    padding-top: 90px;
+    margin-top: -40px;
     margin-left: 0px;
   }
 
   .pagina-atividades h2 {
     margin-top: -45px;
     margin-left: 66px;
+  }
+
+  .navbar-default {
+    height: 100px;
+  }
+
+  .navbar-brand{
+    /*padding-top: 15px;*/
+  }
+
+  .navbar-default .navbar-toggle {
+    border-color: #ddd;
+    margin-top: 30px;
+  }
+
+  section h1 span {
+    background: #ee640f;
+    padding: 15px 15px 15px 30px;
+    display: inline-block;
+    height: 77px;
+  }
+
+  .h3-atividade {
+    padding-left: 55px;
+    margin-top: -50px;
   }
 }
 
@@ -861,7 +892,10 @@ section h2 span  {
   }
 
   .navbar-brand {
-    width: 160px;
+    width: 180px;
+    height: 70px;
+    padding-top: 15px;
+    margin-left: -25px;
   }
 
   .navbar-brand img {
@@ -881,11 +915,11 @@ section h2 span  {
   }
 
   .fa-info{
-    margin-left: 43px;
+    /*margin-left: 43px;*/
   }
 
   .fa-envelope{
-    margin-left: 35px;
+    /*margin-left: 35px;*/
   }
 
   .pra-cima{
@@ -960,11 +994,11 @@ section h2 span  {
   }
 
   .fa-info {
-    margin-left: 53px;
+    /*margin-left: 53px;*/
   }
 
   .fa-envelope {
-    margin-left: 45px;
+    /*margin-left: 45px;*/
   }
 
   .destaque-1, .jogo-1 {

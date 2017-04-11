@@ -7,6 +7,7 @@
     <base href="/">
     <title ng-bind="title"></title>
 
+    <link rel="icon" href="content/favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/portal.css">
 		<link rel="stylesheet" href="css/timeline.css">
@@ -18,10 +19,10 @@
 
     <div ng-include src="'views/menu.html'"></div>
 
-    <ui-view></ui-view>
+    <ui-view accesskey="1"></ui-view>
 
     <div ng-include src="'views/parceiros.html'"></div>
-    <div ng-include src="'views/rodape.html'"></div>
+    <div ng-include src="'views/rodape.html'"  accesskey="3" id="rodape"></div>
 
     <!-- jQuery Libs -->
     <script src="lib/jquery.min.js"></script>
@@ -30,6 +31,7 @@
 
     <!-- Angular Libs -->
     <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-aria.js"></script>
     <script src="lib/ngStorage.min.js"></script>
     <script src="lib/angular-ui-router.min.js"></script>
 
