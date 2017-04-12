@@ -23,7 +23,7 @@ app.config(function ($stateProvider, $urlRouterProvider,$locationProvider) {
     url: '/museu',
     templateUrl: 'views/museu.html',
     data: {
-      title: 'Acesso Educação| Museu'
+      title: 'Acesso Educação | Museu'
     }
   }
   var atividadesState = {
@@ -97,7 +97,7 @@ app.config(function ($stateProvider, $urlRouterProvider,$locationProvider) {
     url: '/videos/guerra-do-paraguai',
     templateUrl: 'views/videos/guerra-do-paraguai.html',
     data: {
-      title: 'Acesso Educação | Guerra do Paraguai'
+      title: 'Acesso Educação | Vídeo Guerra do Paraguai'
     }
   }
 
