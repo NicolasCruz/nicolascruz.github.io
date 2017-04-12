@@ -35,20 +35,20 @@ a{
 
 /*/ CONTRAST /*/
 .contrast {
-  background-color: #000 !important;
+  background-color: #0D0D0D !important;
 }
 
 body.contrast .topo {
-  background-color: #000 !important;
+  background-color: #0D0D0D !important;
 }
 
 body.contrast .jogos, body.contrast .videos, body.contrast .atividades, body.contrast .wrap-footer {
-  background-color: #000 !important;
+  background-color: #0D0D0D !important;
   border-top: 1px solid #fff;
 }
 
 body.contrast .navbar-default {
-    background-color: #000;
+    background-color: #0D0D0D;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
 }
@@ -70,11 +70,11 @@ body.contrast .destaques:after {
   z-index: -1;
   width: 100%;
   height: 100%;
-  background-color: #000;
+  background-color: #0D0D0D;
 }
 
 body.contrast section h1 span {
-  background-color: #000;
+  background-color: #0D0D0D;
   border: 1px solid;
   border-color: #fff !important;
 }
@@ -111,7 +111,7 @@ body.contrast .conteudo-videos, body.contrast .conteudo-museu, body.contrast .co
 body.contrast .pagina-sobre-equipe, body.contrast .pagina-sobre-projeto, body.contrast .pagina-acessibilidade,
 body.contrast .panel-default, body.contrast .panel-primary, body.contrast .panel-heading, body.contrast .alert-warning,
 body.contrast .modal-content {
-  background-color: #000 !important;
+  background-color: #0D0D0D !important;
   color: #FFF !important;
 }
 
@@ -142,26 +142,27 @@ body.contrast .pagina-atividadeAviso {
 }
 
 body.contrast .btn-success, body.contrast .btn-danger, body.contrast .btn-primary {
-  background-color: transparent;
+  background-color: #1C1C1C;
   border: 1px solid #FFF;
   color: #FFF333;
 }
 
-
-
 body.contrast .btn-resposta  {
   color: #FFF;
   border-color: #FFF;
+  background-color: #1C1C1C;
 }
 
-body.contrast .btn-resposta:hover, body.contrast .btn-success:hover, body.contrast .btn-danger:hover, body.contrast .btn-primary:hover {
-  background-color: #FFF333;
-  color: #000;
+body.contrast .btn-resposta:hover, body.contrast .btn-primary:hover {
+  /*background-color: #FFF333;*/
+  color: #FFF333;
+  text-decoration: underline;
 }
 
 body.contrast .btn-resposta.active, body.contrast .btn-success:active, body.contrast .btn-danger:active, body.contrast .btn-primary:active {
-  background-color: #e8db2e;
-  color: #000;
+  background-color: #1C1C1C;
+  color: #FFF333;
+  border-color: #FFF333;
 }
 
 body.contrast .timeline ul li:nth-child(odd) div::before {
@@ -170,7 +171,7 @@ body.contrast .timeline ul li:nth-child(odd) div::before {
 }
 
 body.contrast .timeline ul li div {
-  background-color: #000;
+  background-color: #0D0D0D;
   border: 2px solid #FFF333;
 }
 
@@ -184,5 +185,5 @@ body.contrast .timeline ul li.in-view::after {
 }
 
 body.contrast .fa-arrow-circle-right:hover {
-  color: #000 !important;
+  color: #0D0D0D !important;
 }
