@@ -43,12 +43,12 @@ app.config(function ($stateProvider, $urlRouterProvider,$locationProvider) {
     }
   }
 
-  var atividadeGuerraState = {
-    name: 'atividadeGuerra',
-    url: '/atividades/atividadeGuerra',
+  var atividadeOrigemPontaState = {
+    name: 'atividadeOrigemPonta',
+    url: '/atividades/origemPontaPora',
     templateUrl: 'views/atividades/atividadeGuerra.html',
     data: {
-      title: 'Acesso Educação | Atividade Guerra do Paraguai'
+      title: 'Acesso Educação | Atividade A Origem de Ponta Porã'
     }
   }
 
@@ -92,12 +92,12 @@ app.config(function ($stateProvider, $urlRouterProvider,$locationProvider) {
       title: 'Acesso Educação | Quiz'
     }
   }
-  var guerraState = {
-    name: 'guerra',
-    url: '/videos/guerra-do-paraguai',
-    templateUrl: 'views/videos/guerra-do-paraguai.html',
+  var origemPontaPoraState = {
+    name: 'origemPontaPora',
+    url: '/videos/origemPontaPora',
+    templateUrl: 'views/videos/origemPontaPora.html',
     data: {
-      title: 'Acesso Educação | Vídeo Guerra do Paraguai'
+      title: 'Acesso Educação | Vídeo A Origem de Ponta Porã'
     }
   }
 
@@ -106,11 +106,11 @@ app.config(function ($stateProvider, $urlRouterProvider,$locationProvider) {
   $stateProvider.state(museuState);
   $stateProvider.state(atividadesState);
   $stateProvider.state(atividadesAvisoState);
-  $stateProvider.state(atividadeGuerraState);
+  $stateProvider.state(atividadeOrigemPontaState);
   $stateProvider.state(sobreState);
   $stateProvider.state(contatoState);
   $stateProvider.state(acessibilidadeState);
   $stateProvider.state(jogosState);
   $stateProvider.state(quizState);
-  $stateProvider.state(guerraState);
+  $stateProvider.state(origemPontaPoraState);
 });
