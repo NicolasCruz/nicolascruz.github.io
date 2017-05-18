@@ -1,22 +1,20 @@
 app.controller("quizCtrl",
-  function($scope) {
+  function quizCtrl($scope) {
     $scope.quiz = {
-      question: 'Onde fica Ponta Porã?',
-      answers: [{
-          answer: 'MS',
-          option: 1,
-          correct: 'Y'
-        },
-        {
-          answer: 'SP',
-          option: 2,
-          correct: 'N'
-        },
-        {
-          answer: 'BA',
-          option: 3,
-          correct: 'N'
-        }
-      ]
-    }
+      question: 'Onde está localizada Ponta Porã?',
+      options: ["MS", "SP", "BA", "RJ"],
+      answer: 0
+    };
+
+    $scope.checkAnswer = function() {
+      if (!$('input[name=answer]:checked').length) return;
+
+      var ans = $('input[name=answer]:checked').val();
+
+      if (ans == $scope.quiz.options[$scope.quiz.answer]) {
+        $scope.correctAns = true;
+      } else {
+        $scope.correctAns = false;
+      }
+    };
   });

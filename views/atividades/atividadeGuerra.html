@@ -1,4 +1,4 @@
-<main>
+<main ng-controller="quizCtrl">
   <section>
     <div class="container">
       <ol class="breadcrumb">
@@ -11,7 +11,7 @@
         <h1> Quiz sobre a Origem de Ponta Porã</h1>
       </div>
       <div class="row">
-        <div class="col-sm-12" ng-controller="quizCtrl">
+        <div class="col-sm-12" >
           <div class="panel panel-primary">
             <div class="panel-heading">
               <h3>Questão 1</h3>
@@ -19,33 +19,11 @@
             <div class="panel-body">
               <h3>{{quiz.question}}</h3><br>
               <form>
-                <div class="form-group" data-toggle="buttons" ng-repeat="answers in quiz.answers">
-                  <label class="btn btn-resposta btn-lg btn-block">
-                  <input type="radio" name="options" id="option1" autocomplete="off"> {{answers.answer}}
-                </label>
+                <div class="form-group" data-toggle="buttons">
+                  <label class="btn btn-resposta btn-lg btn-block" ng-repeat="option in quiz.options">
+                    <input type="radio" name="answer" value="{{option}}" ng-model="option"> {{option}}
+                  </label>
                 </div>
-
-
-                <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="sr-only">Fechar</span><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title">Modal title</h4>
-                      </div>
-                      <div class="modal-body">
-                        <h1 class="text-center">PARABÉNS VOCÊ ACERTOU AMIGUINHO!!!!!!!</h1>
-                        <img src="/content/vetor_cuia.png" class="non-shadow" alt="" width="50%" style="padding-left:150px;">
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-success" onclick="window.location='index.html';"> Ir para próxima questão <i class="fa fa-arrow-circle-right"></i></button>
-                      </div>
-                    </div>
-                    <!-- /.modal-content -->
-                  </div>
-                  <!-- /.modal-dialog -->
-                </div>
-                <!-- /.modal -->
             </div>
           </div>
         </div>
@@ -57,10 +35,44 @@
           </div>
           <br>
           <div class="col-md-6">
-            <a href="#" class="hvr-icon-grow btn btn-success btn-lg btn-block" data-toggle="modal" data-target=".bs-example-modal-sm">Ver Resultado</a>
+            <a class="hvr-icon-grow btn btn-success btn-lg btn-block" data-toggle="modal" data-target=".bs-example-modal-sm" ng-click="checkAnswer()">Ver Resultado</a>
             <!-- <button type="button" class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target=".bs-example-modal-sm">Ver resultado</button> -->
           </div>
         </div>
+
+        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="sr-only">Fechar</span><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" ng-show="correctAns">Sucesso</h4>
+                <h4 class="modal-title" ng-show="!correctAns">Insucesso</h4>
+              </div>
+              <div class="modal-body">
+                <!-- <span ng-show="correctAns">PARABÉNS VOCÊ ACERTOU AMIGUINHO!!!!!!!</span>
+                <span ng-show="!correctAns">VOCÊ ERROU AMIGUINHO!!!!!!!</span>
+                <h1 class="text-center" ng-show="correctAns">PARABÉNS VOCÊ ACERTOU AMIGUINHO!!!!!!!</h1>
+                <h1 class="text-center" ng-show="!correctAns">VOCÊ ERROU AMIGUINHO!!!!!!!</h1> -->
+                <img src="/content/certo.png" class="non-shadow" alt="" width="50%" ng-show="correctAns">
+                <img src="/content/errado.png" class="non-shadow" alt="" width="50%" ng-show="!correctAns">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" onclick="window.location='index.html';" ng-show="correctAns">
+                   Ir para próxima questão
+                   <i class="fa fa-arrow-circle-right"></i>
+                 </button>
+                <button type="button" class="btn btn-danger" onclick="window.location='index.html';" ng-show="!correctAns">
+                   Tentar novamente
+                   <i class="fa fa-undo"></i>
+                 </button>
+
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
 
         </form>
       </div>
