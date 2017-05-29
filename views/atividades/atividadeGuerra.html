@@ -1,4 +1,4 @@
-<main ng-controller="quizCtrl">
+<main>
   <section>
     <div class="container">
       <ol class="breadcrumb">
@@ -14,13 +14,13 @@
         <div class="col-sm-12" >
           <div class="panel panel-primary">
             <div class="panel-heading">
-              <h3>Questão 1</h3>
+              <h3>Questão {{current_question}}</h3>
             </div>
             <div class="panel-body">
-              <h3>{{quiz.question}}</h3><br>
+              <h3>{{question}}</h3><br>
               <form>
                 <div class="form-group" data-toggle="buttons">
-                  <label class="btn btn-resposta btn-lg btn-block" ng-repeat="option in quiz.options">
+                  <label class="btn btn-resposta btn-lg btn-block" ng-repeat="option in options">
                     <input type="radio" name="answer" value="{{option}}" ng-model="option"> {{option}}
                   </label>
                 </div>
@@ -57,11 +57,11 @@
                 <img src="/content/errado.png" class="non-shadow" alt="" width="50%" ng-show="!correctAns">
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-success" onclick="window.location='index.html';" ng-show="correctAns">
+                <button type="button" class="btn btn-success" ng-click="nextQuestion()" ng-show="correctAns">
                    Ir para próxima questão
                    <i class="fa fa-arrow-circle-right"></i>
                  </button>
-                <button type="button" class="btn btn-danger" onclick="window.location='index.html';" ng-show="!correctAns">
+                <button type="button" class="btn btn-danger"  ng-show="!correctAns">
                    Tentar novamente
                    <i class="fa fa-undo"></i>
                  </button>
