@@ -1,29 +1,14 @@
 app.controller("quizCtrl", function ($scope, questions) {
-  // $scope.quiz = {
-  //   question: 'Onde está localizada Ponta Porã?',
-  //   options: ["MS", "SP", "BA", "RJ"],
-  //   answer: 0
-  // };
-  //
-  // $scope.checkAnswer = function() {
-  //   if (!$('input[name=answer]:checked').length) return;
-  //
-  //   var ans = $('input[name=answer]:checked').val();
-  //
-  //   if (ans == $scope.quiz.options[$scope.quiz.answer]) {
-  //     $scope.correctAns = true;
-  //   } else {
-  //     $scope.correctAns = false;
-  //   }
-  // };
 
-  console.log(questions.data);
+  //console.log(questions.data);
 
   $scope.start = function() {
 		$scope.current_question = 1;
+    $scope.thanks = false;
 		$scope.quizOver = false;
 		$scope.inProgress = true;
     $scope.score = 0;
+    $scope.errors = 0;
     $scope.questions = questions.data;
 		$scope.getQuestion();
 	};
@@ -50,15 +35,27 @@ app.controller("quizCtrl", function ($scope, questions) {
 			$scope.score++;
 			$scope.correctAns = true;
 		} else {
+      $scope.errors++;
 			$scope.correctAns = false;
 		}
-
 		$scope.answerMode = false;
 	};
 
-	$scope.nextQuestion = function() {
+  $scope.tryAgain = function() {
+    angular.element('#response-modal').modal('hide');
+    $scope.current_question++;
+		$scope.getQuestion();
+	}
+
+  $scope.nextQuestion = function() {
+    angular.element('#response-modal').modal('hide');
 		$scope.current_question++;
 		$scope.getQuestion();
+	}
+
+  $scope.sendResult = function() {
+    console.log("enviando resultado...");
+    $scope.thanks = true;
 	}
 
   // começando o quiz
