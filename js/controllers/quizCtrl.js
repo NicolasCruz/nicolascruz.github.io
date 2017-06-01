@@ -27,8 +27,12 @@ app.controller("quizCtrl", function ($scope, questions, $quizAPI) {
 	};
 
 	$scope.checkAnswer = function() {
-		if(!$('input[name=answer]:checked').length) return;
+		if(!$('input[name=answer]:checked').length) {
+      console.log("nada respondido: " + $('input[name=answer]:checked').length + $('input[name=answer]:checked').val());
+      return;
+    }
 
+    angular.element('#response-modal').modal('show');
 		var ans = $('input[name=answer]:checked').val();
 
 		if(ans == $scope.options[$scope.answer]) {

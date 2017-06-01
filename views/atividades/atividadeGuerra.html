@@ -20,7 +20,7 @@
               <h3>{{question}}</h3><br/>
               <div class="form-group" data-toggle="buttons">
                 <label class="btn btn-resposta btn-lg btn-block" ng-repeat="option in options">
-                  <input type="radio" name="answer" value="{{option}}" ng-model="option"> {{option}}
+                  <input type="radio" name="answer" value="{{option}}" > {{option}}
                 </label>
               </div>
             </div>
@@ -35,7 +35,7 @@
           </div>
           <br>
           <div class="col-md-6">
-            <a class="hvr-icon-grow btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#response-modal" ng-click="checkAnswer()">Responder!</a>
+            <a class="hvr-icon-grow btn btn-success btn-lg btn-block" ng-click="checkAnswer()">Responder!</a>
             <!-- <button type="button" class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target=".bs-example-modal-sm">Ver resultado</button> -->
           </div>
         </div>
@@ -68,7 +68,7 @@
           </div>
           <br>
           <div class="col-md-6">
-            <a ng-show="!thanks" class="hvr-icon-grow btn btn-success btn-lg btn-block" ng-click="sendResult()">Enviar</a>
+            <a ng-show="!thanks" class="hvr-icon-grow btn btn-success btn-lg btn-block" ng-click="sendResult()" ng-disabled="!username">Enviar</a>
             <a ng-show="thanks" ui-sref="inicio" class="hvr-icon-grow btn btn-warning btn-lg btn-block">Voltar</a>
           </div>
         </div>

@@ -10,8 +10,5 @@ app.factory('$quizAPI', function ($http, config) {
 	return {
 		getQuestions: _getQuestions,
 		addQresponses: _addQresponses,
-		test: function () {
-			console.log("teste de func");
-		}
 	};
 });
