@@ -1,4 +1,4 @@
-app.controller("quizCtrl", function ($scope, questions) {
+app.controller("quizCtrl", function ($scope, questions, $quizAPI) {
 
   //console.log(questions.data);
 
@@ -56,6 +56,18 @@ app.controller("quizCtrl", function ($scope, questions) {
   $scope.sendResult = function() {
     console.log("enviando resultado...");
     $scope.thanks = true;
+
+    var qresponse = {
+    	"quiz": "Guerra",
+    	"aluno": $scope.username,
+    	"acertos": $scope.score,
+    	"erros": $scope.errors
+    };
+    $quizAPI.addQresponses(qresponse).then(function successCallback(response) {
+      console.log("salvo com sucesso!");
+    }, function errorCallback(response) {
+      console.log("Erro ao salvar...");
+    });
 	}
 
   // começando o quiz

@@ -1,7 +1,8 @@
 var app = angular.module("cuia", ['ngStorage','ui.router']);
 
 app.constant("config", {
-	backend: "http://acessoeducacao.dev/backend"
+	backend: "http://acessoeducacao.dev/backend",
+	api: "http://api.acessoeducacao.dev"
 });
 
 app.run(function($rootScope){

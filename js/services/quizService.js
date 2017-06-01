@@ -3,7 +3,15 @@ app.factory('$quizAPI', function ($http, config) {
 		return $http.get(config.backend + "/quiz.json");
 	};
 
+	var _addQresponses = function (qresponse) {
+		return $http.post(config.api + "/qresponses/add.json", qresponse);
+	};
+
 	return {
 		getQuestions: _getQuestions,
+		addQresponses: _addQresponses,
+		test: function () {
+			console.log("teste de func");
+		}
 	};
 });
