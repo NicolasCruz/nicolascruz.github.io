@@ -14,32 +14,22 @@
         <div class="col-sm-12">
           <div class="panel panel-primary">
             <div class="panel-heading">
-              <h3>Questão {{current_question}}</h3>
+              <h3>Questão {{current_question + 1}} de {{questions.length}}</h3>
             </div>
             <div class="panel-body">
               <h3>{{question}}</h3><br/>
-              <div class="form-group" data-toggle="buttons">
-                <label class="btn btn-resposta btn-lg btn-block" ng-repeat="option in options">
-                  <input type="radio" name="answer" value="{{option}}" > {{option}}
-                </label>
+              <div class="row">
+                <div class="col-sm-6" ng-repeat="option in options">
+                  <h4 class="answer btn btn-resposta btn-lg btn-block"
+                      ng-class="{'active': $index === questions[current_question].selected}"
+                      ng-click="checkAnswer($index)">
+                      {{option}}
+                  </h4>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="container-fluid form-group">
-          <div class="col-md-6">
-            <!-- <a href="#" class="hvr-icon-spin btn btn-danger btn-lg btn-block">Tentar Novamente</a><br> -->
-            <!-- <button type="button" class="btn btn-danger btn-lg btn-block">Tentar Novamente</button>-->
-            <!-- <button type="button" class="btn btn-danger btn-lg btn-block" ng-click="sendResult()">test send</button> -->
-          </div>
-          <br>
-          <div class="col-md-6">
-            <a class="hvr-icon-grow btn btn-success btn-lg btn-block" ng-click="checkAnswer()">Responder!</a>
-            <!-- <button type="button" class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target=".bs-example-modal-sm">Ver resultado</button> -->
-          </div>
-        </div>
-
       </div>
 
       <div ng-show="quizOver" id="enviar-resultado" class="row">
@@ -64,30 +54,21 @@
 
         <div class="container-fluid form-group">
           <div class="col-md-6">
-            <button type="button" class="btn btn-danger btn-lg btn-block" ng-click="start()">Recomeçar quiz</button>
-          </div>
-          <br>
-          <div class="col-md-6">
-            <a ng-show="!thanks" class="hvr-icon-grow btn btn-success btn-lg btn-block" ng-click="sendResult()" ng-disabled="!username">Enviar</a>
+            <a ng-show="!thanks" class="hvr-icon-grow btn btn-success btn-lg btn-block" ng-click="!username || sendResult()" ng-disabled="!username">Enviar</a>
             <a ng-show="thanks" ui-sref="inicio" class="hvr-icon-grow btn btn-warning btn-lg btn-block">Voltar</a>
           </div>
         </div>
 
       </div>
 
-      <div id="response-modal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog">
+      <div id="response-modal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" data-keyboard="false" data-backdrop="static">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="sr-only">Fechar</span><span aria-hidden="true">&times;</span></button>
               <h4 class="modal-title" ng-show="correctAns">Sucesso</h4>
               <h4 class="modal-title" ng-show="!correctAns">Insucesso</h4>
             </div>
             <div class="modal-body">
-              <!-- <span ng-show="correctAns">PARABÉNS VOCÊ ACERTOU AMIGUINHO!!!!!!!</span>
-              <span ng-show="!correctAns">VOCÊ ERROU AMIGUINHO!!!!!!!</span>
-              <h1 class="text-center" ng-show="correctAns">PARABÉNS VOCÊ ACERTOU AMIGUINHO!!!!!!!</h1>
-              <h1 class="text-center" ng-show="!correctAns">VOCÊ ERROU AMIGUINHO!!!!!!!</h1> -->
               <img src="/content/certo.png" class="non-shadow" alt="" width="50%" ng-show="correctAns">
               <img src="/content/errado.png" class="non-shadow" alt="" width="50%" ng-show="!correctAns">
             </div>
@@ -96,11 +77,6 @@
                  Ir para próxima questão
                  <i class="fa fa-arrow-circle-right"></i>
                </button>
-              <!-- <button type="button" class="btn btn-danger"  ng-show="!correctAns">
-                 Tentar novamente
-                 <i class="fa fa-undo"></i>
-               </button> -->
-
             </div>
           </div>
           <!-- /.modal-content -->

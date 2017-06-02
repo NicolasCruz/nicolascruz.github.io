@@ -1,9 +1,7 @@
 app.controller("quizCtrl", function ($scope, questions, $quizAPI) {
 
-  //console.log(questions.data);
-
   $scope.start = function() {
-		$scope.current_question = 1;
+		$scope.current_question = 0;
     $scope.thanks = false;
 		$scope.quizOver = false;
 		$scope.inProgress = true;
@@ -15,8 +13,9 @@ app.controller("quizCtrl", function ($scope, questions, $quizAPI) {
 
 	$scope.getQuestion = function() {
 
-    if($scope.current_question - 1 < $scope.questions.length) {
-      var q = $scope.questions[ $scope.current_question - 1 ];
+    if($scope.current_question < $scope.questions.length) {
+      var q = $scope.questions[ $scope.current_question ];
+      $scope.canRespond = false;
       $scope.question = q.question;
       $scope.options = q.options;
       $scope.answer = q.answer;
@@ -26,16 +25,12 @@ app.controller("quizCtrl", function ($scope, questions, $quizAPI) {
 		}
 	};
 
-	$scope.checkAnswer = function() {
-		if(!$('input[name=answer]:checked').length) {
-      console.log("nada respondido: " + $('input[name=answer]:checked').length + $('input[name=answer]:checked').val());
-      return;
-    }
+	$scope.checkAnswer = function(index) {
+
+    $scope.questions[$scope.current_question].selected = index;
 
     angular.element('#response-modal').modal('show');
-		var ans = $('input[name=answer]:checked').val();
-
-		if(ans == $scope.options[$scope.answer]) {
+		if($scope.questions[$scope.current_question].selected == $scope.answer) {
 			$scope.score++;
 			$scope.correctAns = true;
 		} else {
