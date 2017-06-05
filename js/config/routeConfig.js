@@ -44,11 +44,17 @@ app.config(function ($stateProvider, $urlRouterProvider,$locationProvider) {
   }
 
   var atividadeOrigemPontaState = {
+    controller: 'quizCtrl',
     name: 'atividadeOrigemPonta',
     url: '/atividades/origemPontaPora',
     templateUrl: 'views/atividades/atividadeGuerra.html',
     data: {
       title: 'Acesso Educação | Atividade A Origem de Ponta Porã'
+    },
+    resolve: {
+      questions: function ($quizAPI) {
+				return $quizAPI.getQuestions();
+			}
     }
   }
 
