@@ -1,27 +1,27 @@
 [
   {
-		"question": "Which is the largest country in the world by population?",
-		"options": ["India", "USA", "China", "Russia"],
+		"question": "Em que ano os paulistas chegaram a Ponta Porã?",
+		"options": ["1765", "1980", "1777", "1613"],
 		"answer": 2
 	},
 	{
-		"question": "When did the second world war end?",
-		"options": ["1945", "1939", "1944", "1942"],
+		"question": "Qual o nome do tenente da Colônia Militar dos Dourados?",
+		"options": ["Antônio João Ribeiro", "Julio Alfredo Mangini", "Feliciano Ramos Nazareth", "Boaventura Nazareth"],
 		"answer": 0
 	},
 	{
-		"question": "Which was the first country to issue paper currency?",
-		"options": ["USA", "France", "Italy", "China"],
+		"question": "Em que ano faleceu Antônio João?",
+		"options": ["1872", "1900", "1893", "1864"],
 		"answer": 3
 	},
 	{
-		"question": "Which city hosted the 1996 Summer Olympics?",
-		"options": ["Atlanta", "Sydney", "Athens", "Beijing"],
+		"question": "Qual o ano em que Ponta Porã se tornou distrito de Bela Vista?",
+		"options": ["1900", "1735", "1500", "1988"],
 		"answer": 0
 	},
 	{
-		"question": "Who invented telephone?",
-		"options": ["Albert Einstein", "Alexander Graham Bell", "Isaac Newton", "Marie Curie"],
+		"question": "Qual o dia, mês e ano que Ponta Porã deixa de ser distrito de Bela Vista?",
+		"options": ["7 de setembro de 1822", "18 de julho de 1912", "25 de março de 1892", "01 de dezembro de 1900"],
 		"answer": 1
 	}
 ]
