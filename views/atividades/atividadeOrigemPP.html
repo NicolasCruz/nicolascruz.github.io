@@ -1,0 +1,90 @@
+<main>
+  <section>
+    <div class="container">
+      <ol class="breadcrumb">
+        <li><a ui-sref="inicio">Inicio</a></li>
+        <li><a ui-sref="atividades">Atividades</a></li>
+        <li class="active">Atividade - A Origem de Ponta Porã</li>
+      </ol>
+      <div class="col-sm-12 pagina-jogo">
+        <i class="fa fa-gamepad fa-4x"></i>
+        <h1> Quiz sobre a Origem de Ponta Porã</h1>
+      </div>
+      <div ng-show="!quizOver" id="questionario" class="row">
+        <div class="col-sm-12">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3>Questão {{current_question + 1}} de {{questions.length}}</h3>
+            </div>
+            <div class="panel-body">
+              <h3>{{question}}</h3><br/>
+              <div class="row">
+                <div class="col-sm-6" ng-repeat="option in options">
+                  <h4 class="answer btn btn-resposta btn-lg btn-block"
+                      ng-class="{'active': $index === questions[current_question].selected}"
+                      ng-click="checkAnswer($index)">
+                      {{option}}
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div ng-show="quizOver" id="enviar-resultado" class="row">
+        <div class="col-sm-12" >
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3>Enviar resultado</h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div ng-show="!thanks" class="col-md-offset-2 col-md-8">
+                  <h3>Seu nome</h3>
+                  <input class="send-name" type="text" ng-model="username" />
+                </div>
+                <div ng-show="thanks" class="col-md-offset-2 col-md-8">
+                  <img src="/content/thanks.png" class="non-shadow img-responsive">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid form-group">
+          <div class="col-md-6">
+            <a ng-show="!thanks" class="hvr-icon-grow btn btn-success btn-lg btn-block" ng-click="!username || sendResult()" ng-disabled="!username">Enviar</a>
+            <a ng-show="thanks" ui-sref="inicio" class="hvr-icon-grow btn btn-warning btn-lg btn-block">Voltar</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="response-modal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" ng-show="correctAns">Sucesso</h4>
+              <h4 class="modal-title" ng-show="!correctAns">Insucesso</h4>
+            </div>
+            <div class="modal-body">
+              <img src="/content/certo.png" class="non-shadow" alt="" width="50%" ng-show="correctAns">
+              <img src="/content/errado.png" class="non-shadow" alt="" width="50%" ng-show="!correctAns">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" ng-click="nextQuestion()">
+                 Ir para próxima questão
+                 <i class="fa fa-arrow-circle-right"></i>
+               </button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+
+    </div> <!-- /.container -->
+  </section>
+</main>

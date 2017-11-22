@@ -1,0 +1,27 @@
+[
+  {
+		"question": "Como​ ​era​ ​conhecido​ ​o​ ​criador​ ​do​ ​Museu​ ​da​ ​Erva​ ​mate?",
+		"options": ["Seu Toté Benites", "Seu Taté Benites", "Seu Totó Benites", "Seu Tetó Benites"],
+		"answer": 0
+	},
+	{
+		"question": "​Qual​ ​companhia​ ​doou​ ​o​ ​terreno​ ​onde​ ​hoje​ ​se​ ​encontra​ ​o​ ​11º​ ​regimento de​ ​cavalaria​ ​mecanizada​ ​(RC​ ​MEC)?",
+		"options": ["Companhia das águas", "Companhia erva mate", "Companhia mate laranjeira", "Companhia das laranjeiras"],
+		"answer": 2
+	},
+	{
+		"question": "​Onde​ ​está​ ​localizado​ ​o​ ​monumento​ ​Princesinha​ ​dos​ ​ervais?",
+		"options": ["No centro da cidade", "No trevo de acesso a cidade", "Não existe mais", "No horto da cidade"],
+		"answer": 1
+	},
+	{
+		"question": "O​ ​castelinho​ ​de​ ​Ponta​ ​Porã​ ​já​ ​funcionou​ ​como​ ​sede​ ​da:",
+		"options": ["Guarda Nacional", "Guarda Federal", "Guarda Municipal", "Guarda Regional"],
+		"answer": 0
+	},
+	{
+		"question": "Quanto​ ​tempo​ ​demorou​ ​para​ ​que​ ​o​ ​ramal​ ​da​ ​estação​ ​ferroviária​ ​de Ponta​ ​Porã​ ​que​ ​ligava​ ​Campo​ ​Grande​ ​à​ ​fronteira​ ​paraguaia​ ​ficasse pronto?",
+		"options": ["5 anos", "10 anos", "8 anos", "9 anos"],
+		"answer": 3
+	}
+]

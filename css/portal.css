@@ -152,6 +152,8 @@ section h1 span {
   padding: 15px 30px 15px 30px;
   display: inline-block;
   height: 77px;
+  border-radius: 10px;
+
 }
 
 section h2 {
@@ -159,7 +161,7 @@ section h2 {
   font-size: 33px;
   text-transform: uppercase;
   color: #fff;
-  margin: 0 0 30px 0;
+  margin: 100 0 30px 0;
 }
 
 section h2 span {

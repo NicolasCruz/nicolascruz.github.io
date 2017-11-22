@@ -1,27 +1,52 @@
 [
   {
-		"question": "Em que ano os paulistas chegaram a Ponta Porã?",
-		"options": ["1765", "1980", "1777", "1613"],
-		"answer": 2
+		"question": "Como foi inicialmente formada a cidade de Ponta Porã?",
+		"options": ["Através de um acampamento militar", "Através de um pequeno povoado", "Através de uma colônia paraguaia", "Através de colônias de carreteiros"],
+		"answer": 1
 	},
 	{
-		"question": "Qual o nome do tenente da Colônia Militar dos Dourados?",
-		"options": ["Antônio João Ribeiro", "Julio Alfredo Mangini", "Feliciano Ramos Nazareth", "Boaventura Nazareth"],
+		"question": "Quem fazia o transporte da erva mate nessa época?",
+		"options": ["Carreteiros", "Índios", "Soldados", "Ninguém"],
 		"answer": 0
 	},
 	{
-		"question": "Em que ano faleceu Antônio João?",
-		"options": ["1872", "1900", "1893", "1864"],
+		"question": "Em 1862 chegou o grupo do tenente militar Antônio João Ribeiro que se fixou na cabeceira do rio Dourados, onde atualmente localiza-se o município de ?",
+		"options": ["Ponta Porã", "Sanga Puitã", "Dourados", "Antônio João"],
 		"answer": 3
 	},
 	{
-		"question": "Qual o ano em que Ponta Porã se tornou distrito de Bela Vista?",
-		"options": ["1900", "1735", "1500", "1988"],
-		"answer": 0
+		"question": "Quando a colonização da região de Ponta Porã ganhou impulso?",
+		"options": ["Antes da guerra", "Depois da guerra", "Durante a guerra", "Durante a exploração de erva mate"],
+		"answer": 1
 	},
 	{
-		"question": "Qual o dia, mês e ano que Ponta Porã deixa de ser distrito de Bela Vista?",
-		"options": ["7 de setembro de 1822", "18 de julho de 1912", "25 de março de 1892", "01 de dezembro de 1900"],
+		"question": "Onde o militar Feliciano Ramos Nazareth ergueu seu acampamento?",
+		"options": ["Junto a uma plantação de erva mate", "Junto a uma fazenda", "Junto a lagoa do Paraguai", "Próximo a um rio"],
+		"answer": 2
+	},
+  {
+		"question": "Qual o nome do primeiro pontaporanense nascido na região?",
+		"options": ["Boaventura Nazareth", "Antonio Nazareth", "Francisco Nazareth", "Franco Nazareth"],
+		"answer": 0
+	},
+  {
+		"question": "Com que intenções os imigrantes gaúchos vieram a região de Ponta Porã?",
+		"options": ["Cultivar erva mate", "Construir fazendas", "Passear", "Cultivar a terra e criar gado"],
+		"answer": 3
+	},
+  {
+		"question": "Antes de ser construida a primeira escola da região onde as crianças estudavam?",
+		"options": ["Em casa", "Em escolas paraguaias", "Não estudavam", "Em Antonio João"],
 		"answer": 1
+	},
+  {
+		"question": "Em que ano Ponta Porã deixou de ser distrito de Bela Vista?",
+		"options": ["1912", "1893", "1900", "1880"],
+		"answer": 2
+	},
+  {
+		"question": "Como o tenente Antônio João Ribeiro veio a falecer?",
+		"options": ["Durante um confronto da guerra", "Por causas naturais", "Durante uma expedição", "Andando a cavalo"],
+		"answer": 0
 	}
 ]

@@ -47,13 +47,28 @@ app.config(function ($stateProvider, $urlRouterProvider,$locationProvider) {
     controller: 'quizCtrl',
     name: 'atividadeOrigemPonta',
     url: '/atividades/origemPontaPora',
-    templateUrl: 'views/atividades/atividadeGuerra.html',
+    templateUrl: 'views/atividades/atividadeOrigemPP.html',
     data: {
       title: 'Acesso Educação | Atividade A Origem de Ponta Porã'
     },
     resolve: {
       questions: function ($quizAPI) {
 				return $quizAPI.getQuestions();
+			}
+    }
+  }
+
+  var atividadeMuseuState = {
+    controller: 'quizCtrlMuseu',
+    name: 'atividadeMuseu',
+    url: '/atividades/atividadeMuseu',
+    templateUrl: 'views/atividades/atividadeMuseu.html',
+    data: {
+      title: 'Acesso Educação | Atividade Sobre o Museu'
+    },
+    resolve: {
+      questions: function ($quizAPIMuseu) {
+				return $quizAPIMuseu.getQuestions();
 			}
     }
   }
@@ -113,6 +128,7 @@ app.config(function ($stateProvider, $urlRouterProvider,$locationProvider) {
   $stateProvider.state(atividadesState);
   $stateProvider.state(atividadesAvisoState);
   $stateProvider.state(atividadeOrigemPontaState);
+  $stateProvider.state(atividadeMuseuState);
   $stateProvider.state(sobreState);
   $stateProvider.state(contatoState);
   $stateProvider.state(acessibilidadeState);
